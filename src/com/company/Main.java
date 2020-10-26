@@ -9,10 +9,10 @@ public class Main {
         if (month>=1 && month<3 || month==12 ) {
             System.out.println("Зима");
         }
-        else if (month>2 && month<5) {
+        else if (month>2 && month<=5) {
             System.out.println("Весна");
         }
-        else if (month>5 && month<8){
+        else if (month>5 && month<=8){
             System.out.println("Лето");
         }
         else if (month>8 && month<12) {
@@ -23,40 +23,24 @@ public class Main {
 
         switch (month) {
             case 1:
-                System.out.println("Зима");
-                break;
             case 2:
+            case 12:
                 System.out.println("Зима");
                 break;
             case 3:
-                System.out.println("Весна");
-                break;
             case 4:
-                System.out.println("Весна");
-                break;
             case 5:
                 System.out.println("Весна");
                 break;
             case 6:
-                System.out.println("Лето");
-                break;
             case 7:
-                System.out.println("Лето");
-                break;
             case 8:
                 System.out.println("Лето");
                 break;
             case 9:
-                System.out.println("Осень");
-                break;
             case 10:
-                System.out.println("Осень");
-                break;
             case 11:
                 System.out.println("Осень");
-                break;
-            case 12:
-                System.out.println("Зима");
                 break;
             default:
                 System.out.println("Не сезоны");
@@ -67,16 +51,12 @@ public class Main {
             System.out.print(array[i] + " ");
         }
 
-        {
-            System.out.println();
-        }
+        System.out.println();
 
         for (int i = array.length - 1; i >= 0; i--) {
             System.out.print(array[i] + " ");
         }
-        {
-            System.out.println();
-        }
+        System.out.println();
 
         int[][] squareArray = new int[3][2];
         squareArray[0][0] = 1;
